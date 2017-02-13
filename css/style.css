@@ -1,0 +1,99 @@
+body{
+	width: 100%;
+	margin: 0 auto;
+	font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo";
+	box-sizing: border-box;
+	background-color: #fffffc;
+	line-height: 1.8;
+	color: #323030;
+}
+header img{
+	margin: 20px;
+	position: fixed;
+}
+
+
+/*プロフィール*/
+.about{
+	width: 500px;
+	margin: 0 auto;
+	text-align: center;
+}
+.portrait{
+	margin: 120px 0 50px 0;
+	transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	-webkit-transform: rotate(-10deg);
+}
+.about h1{
+	font-size: 18px;
+	margin: 15px;
+}
+.about p{
+	font-size: 13px;
+	margin: 10px;
+}
+.fa{
+	width: 4px;
+	height: 4px;
+	text-decoration: none;
+	color: white;
+	background-color: #323030;
+	padding: 10px;
+	margin: 10px 5px;
+	border-radius: 2px;
+	text-align: center;
+	opacity: 0.5;
+}
+.fa-facebook,.fa-twitter{position: relative;}
+.fa-facebook:before{
+	position: absolute;
+	font-size: 15px;
+	top: 8px;
+	left: 9px;
+}
+.fa-twitter:before{
+	position: absolute;
+	font-size: 15px;
+	top: 8px;
+	left: 6px;
+}
+.fa:hover{
+	opacity: 1;
+}
+/*作品*/
+.work{
+	width: 600px;
+	margin: 0 auto;
+	margin-top: 30px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+.work img{
+	width: 600px;
+	margin: 80px auto;
+}
+/* タブレット用スタイル */
+@media screen and (max-width: 768px) {
+	header img{text-align: center;}
+
+	.about{
+		width: 300px;
+	}
+
+	.work{
+		width: 300px;
+	}
+
+	.work img{
+		width: 300px;
+	}
+}
+/* スマートフォン用スタイル */
+@media screen and (max-width: 480px) {
+	.sample{
+		width: 300px;
+	}
+}
+
